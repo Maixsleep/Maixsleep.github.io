@@ -1,0 +1,697 @@
+header{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    width: 96%; 
+    padding: 10px 10px; 
+    margin:10px 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/Solar_eclipse.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #0000ff;
+    border-radius: 5px;
+}
+
+.search-container {
+    position: absolute;
+    right: 10px; 
+    top: 10px; 
+}
+
+
+body {
+    width: 80vw;
+    margin: 0 auto; 
+    font-family: Arial, sans-serif; 
+    background-color: #3a3a3c; 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(../img/Bodybg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+nav {
+    background-color: #606060;
+    color: #e8e8e8;
+    padding: 10px 10px;
+    border-radius: 20px; 
+    margin: 10px 10px; 
+    width: 96%; 
+    height:30px;
+    position: relative; 
+    justify-content: center; 
+    align-content: center; 
+   
+
+}
+
+nav::after {
+    content: '';
+    position: absolute;
+    top: -5px; 
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #000099; 
+    border-radius: 25px; 
+    z-index: -1; 
+}
+
+nav ul {
+    display: inline-flex;
+    padding: 0;
+    margin: 0 0; 
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+   
+}
+
+nav ul li a {
+    color: #e8e8e8; 
+    text-decoration:underline ;
+    font-weight: bold;
+    padding: 5px 10px; 
+    transition: color 0.3s, background-color 0.3s, text-decoration 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #990000;
+    text-decoration: underline;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3.0rem;
+    color: #ff3333;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px 0;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    color: #33ffff;
+    margin: 10px 0;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: #dd3333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color:#3949AB;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.Gears {
+    display: flex;
+    justify-content: flex-start; 
+    width: 100%;
+}
+
+.Gears section {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw); 
+    grid-template-rows: repeat(2, 30vw); 
+    gap: 8px; 
+    width: 100%; 
+    justify-content: center; 
+    align-content: center; 
+}
+
+.picture {
+        margin: 5px;
+        max-width: 90%; 
+        height: 90%; 
+
+    
+}
+
+footer {
+    background-color: #606060;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 20px; 
+    margin: 10px 10px; 
+    width: 96%; 
+    Height: 30px;
+    position: relative; 
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    top: -5px; 
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #000099; 
+    border-radius: 25px; 
+    z-index: -1;
+}
+.search-container {
+    position: absolute; 
+    top: 30px; 
+    right: 0; 
+    padding: 10px; 
+}
+
+.footerP{
+    Margin:5px 5px;
+    font-size: 16px;
+    color:#33ffff;}
+    
+
+
+.story {
+    padding: 10px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px 10px;
+    width:96%;
+    position: relative; 
+    border: 2px solid #990000;
+
+}
+.story::before {
+    content: "";
+    position: absolute; 
+    top: -5px; 
+    left: -5px;
+    right: -5px; 
+    bottom: -5px; 
+    border: 2px solid #990000; 
+    z-index: -1; 
+    border-radius: 8px; 
+}   
+
+.story p {
+    font-family: 'Noto Sans', sans-serif; 
+    font-size: 16px;
+    color:#ffffff;
+    line-height: 1.6; 
+    margin: 15px; 
+    width:96%;
+    text-align: justify;
+}
+
+
+
+.story p:last-child {
+    margin-bottom: 15px; 
+}
+
+.countdown {
+    font-size: 40px;
+    color:#33ffff;
+    text-align: center;
+    margin: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.center{
+  font-size: 44px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color:#33ffff;
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cd{
+    padding: 10px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px 10px;
+    width:96%;
+    position: relative; 
+    border: 2px solid #990000;
+
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #990000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid transparent; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #dd3333; 
+    color: #eeeeee; 
+    border-color: #ffffff; 
+}
+
+
+
+
+.LJ{
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#survival-tip-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #990000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid transparent; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    width: 50%; 
+
+}
+#survival-tip-btn:hover {
+    background-color: #dd3333; 
+    color: #eeeeee; 
+    border-color: #ffffff; 
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 40px auto;
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form > label {
+    display: block;
+    margin-top: 15px;
+}
+
+form > input,
+form > select,
+form > textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form > textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #5C6BC0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: block; 
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #3949AB;
+}
+
+.advice-slider {
+    overflow: hidden;
+    width: 96%;
+    margin: 20px auto;
+    background-color: rgba(145, 154, 240, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.advice-item {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.advice-item:first-child {
+    display: block;
+}
+
+
+#next-advice {
+    display: block;
+    width: 30%;
+    padding: 10px 0;
+    margin:auto;
+    background-color: rgba(145, 154, 240, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+#next-advice:hover {
+    background-color:#151573;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    header{
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        justify-content: flex-start; 
+        width: 93%; 
+        padding: 10px 10px; 
+        margin:10px 10px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/Solar_eclipse.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 2px solid #0000ff;
+    }
+    body {
+        width: 100vw;
+    }
+ 
+    nav{
+    width: 93%; 
+    padding: 10px 10px; 
+    margin:10px 10px;
+    }
+    .search-container {
+        position: absolute;
+        right: 10px; 
+        top: 10px;
+    }
+    .story {
+        padding: 10px; 
+        margin: 10px 10px; 
+        width:93%;
+    
+    }
+    
+    .story p {
+        margin: 15px; 
+        width:93%;
+      
+    }
+    footer {
+        background-color: #606060;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 10px;
+        border-radius: 20px; 
+        margin: 10px 10px; 
+        width: 93%; 
+        Height: 30px;
+        position: relative; 
+    }
+    
+    footer::after {
+        content: '';
+        position: absolute;
+        top: -5px; 
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border: 2px solid #000099; 
+        border-radius: 25px; 
+        z-index: -1;
+    }
+    .search-container {
+        position: absolute; 
+        top: 30px; 
+        right: 0; 
+        padding: 10px; 
+    }
+    
+    .footerP{
+        Margin:5px 5px;
+        font-size: 16px;
+        color:#33ffff;}
+
+    
+
+    .cd{
+        padding: 10px;
+        border-radius: 8px; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin: 10px 10px;
+        width:93%;
+        position: relative; 
+        border: 2px solid #990000;
+    
+    }
+    
+    .advice-slider {
+        overflow: hidden;
+        width: 93%;
+        margin: 10px 10px;
+        background-color: rgba(145, 154, 240, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    }
+
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    header{
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        justify-content: flex-start; 
+        width: 90%; 
+        padding: 10px 10px; 
+        margin:10px 10px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/Solar_eclipse.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 2px solid #0000ff;
+    }
+    nav {
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px 10px; 
+        flex-direction: column; 
+        height: auto; 
+        width:90%;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0; 
+        margin: 0;
+        width:  100%;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+
+
+    .Deals section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .picture {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    .search-container {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .story {
+        padding: 10px;
+        margin: 10px 10px;
+        width:90%;
+    
+    }
+    
+    .story p {
+        margin: 15px;
+        width:89%;
+      
+    }
+
+    footer {
+        background-color: #606060;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 10px;
+        border-radius: 20px; 
+        margin: 10px 10px; 
+        width: 90%; 
+        Height: 30px;
+        position: relative; 
+    }
+    
+    footer::after {
+        content: '';
+        position: absolute;
+        top: -5px; 
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border: 2px solid #000099; 
+        border-radius: 25px; 
+        z-index: -1;
+    }
+    .search-container {
+        position: absolute; 
+        top: 30px; 
+        right: 0; 
+        padding: 10px; 
+    }
+    
+    .footerP{
+        Margin:5px 5px;
+        font-size: 12px;
+        color:#33ffff;}
+    
+.cd{
+    padding: 5px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px 10px;
+    width:90%;
+    position: relative; 
+    border: 2px solid #990000;
+
+}
+
+.advice-slider {
+    overflow: hidden;
+    width: 90%;
+    margin: 10px 10px;
+    background-color: rgba(145, 154, 240, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+    
+}

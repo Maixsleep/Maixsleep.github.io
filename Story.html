@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yifan Huang">
+    <title> Apocalyptic Survival Gear and Supply</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DOOMSDAY SURVIVAL</h1>
+        <h2>DO Sonething at the end of the world</h2>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://theconversation.com/for-the-maya-solar-eclipses-were-a-sign-of-heavenly-clashes-and-their-astronomers-kept-sophisticated-records-to-predict-them-225535">SOlAR ECLIPSE</a></li>
+            <li><a href="https://www.survivethedoomsday.com/doomsday/">Prep for DOOMSDAY</a></li>
+            <li><a href="https://www.cnn.com/2024/01/23/world/doomsday-clock-2024-climate-scn/index.html">Doomsday Clock</a></li>
+            <li><a href="https://www.fema.gov/press-release/20210318/how-build-kit-emergencies">Preparedness Kit</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/List_of_potentially_habitable_exoplanets">Habitable Planet</a></li>
+        </ul>
+    </nav>
+
+    <div class="advice-slider">
+        <div class="advice-item">If you're not familiar with post-apocalyptic survival, try playing Ubisoft's Division 2.</div>
+        <div class="advice-item">WARNING: Many foods will not present the color he should have, don't eat them!</div>
+        <div class="advice-item">No smoking, doomsday or not.</div>
+        <div class="advice-item">WARNING: If you are alone in the wilderness, do not oblige to anyone's shouts, they are probably not human.</div>
+        <div class="advice-item">WARNING: Monsters rely on hearing to recognize your location; do not run or shout without a weapon.</div>
+    </div>
+    <button id="next-advice">Next</button>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nextButton = document.getElementById('next-advice');
+            nextButton.addEventListener('click', function() {
+                const current = document.querySelector('.advice-item:not([style*="display: none"])');
+                let next = current.nextElementSibling || document.querySelector('.advice-item:first-child');
+                current.style.display = 'none';
+                next.style.display = 'block';
+            });
+        });
+    </script>
+    
+
+
+    <section class="story">
+    <p>The end of the world has been a subject of mystery and fear throughout the long history of mankind. It represents the end of the world, the extinction of all life, and the complete transformation of the known universe. When we explore this theme, we are not only reflecting on the fragility of the human race, but also examining the unpredictability and power of the natural world.</p>
+    <p>Solar eclipses, one of the astronomical phenomena, have been viewed by many cultures since ancient times as ominous signs or precursors to major disasters. In these ancient beliefs, the appearance of a solar eclipse signaled significant change or even the beginning of the end of the world. It is a direct demonstration of the forces at work in nature and a reminder of our reverence for the power of the universe.</p>
+    <p>End-of-the-world scenarios are usually accompanied by a series of catastrophic events including, but not limited to, natural disasters, global epidemics, nuclear war, celestial impacts, and climate change-induced disasters. The occurrence of these events would result in the breakdown of social order, depletion of resources, and the complete destruction of the human condition.</p>
+    <p>Although solar eclipses are scientifically predictable astronomical events, their occurrence is a constant reminder of the existence of natural forces beyond human understanding and control. In the face of apocalyptic visions, we are forced to reflect on our own existence and our level of preparedness as human beings to deal with unknown threats.</p>
+    <p>Thus, the end of the world is not only a fear of the end, but also a deep concern for the unknown future. Within this theme, the solar eclipse serves as a symbol that deepens our sense of mystery and fear of events that could lead to the extinction of the human race. In this way, we seek to find meaning in the unknown, as well as hope in the midst of despair.</p>
+</section>
+<section class="LJ"> 
+    <a href="index.html" class="btn">-  -  -  -  Home Page  -  -  -  -</a>
+    <a href="Gears.html" class="btn">I Do Need Good Weapons!</a>
+    <a href="Application.html" class="btn">Apply for Doomsday Assistance</a>
+</section>
+
+
+
+
+        <footer>
+        
+        <p class="footerP"> Contact YF498378@DAL.CA  If You Are Not Ready          </p> 
+    
+    </footer>
+</body>
+
+</html>

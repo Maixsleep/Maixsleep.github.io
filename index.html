@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yifan Huang">
+    <title> Apocalyptic Survival Gear and Supply</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DOOMSDAY SURVIVAL</h1>
+        <h2>DO Sonething at the end of the world</h2>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://theconversation.com/for-the-maya-solar-eclipses-were-a-sign-of-heavenly-clashes-and-their-astronomers-kept-sophisticated-records-to-predict-them-225535">SOlAR ECLIPSE</a></li>
+            <li><a href="https://www.survivethedoomsday.com/doomsday/">Prep for DOOMSDAY</a></li>
+            <li><a href="https://www.cnn.com/2024/01/23/world/doomsday-clock-2024-climate-scn/index.html">Doomsday Clock</a></li>
+            <li><a href="https://www.fema.gov/press-release/20210318/how-build-kit-emergencies">Preparedness Kit</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/List_of_potentially_habitable_exoplanets">Habitable Planet</a></li>
+        </ul>
+    </nav>
+
+    <main class="cd">
+    <section>
+       
+          <p class="center">  !!!!!     Countdown to the end of the world     !!!!!</p>
+             
+           
+
+            <div id="countdown" class="countdown"></div>
+        </section>
+    
+        <script class="time">
+            function updateCountdown() {
+                const endDate = new Date("December 31, 2099 23:59:59").getTime(); 
+                const now = new Date().getTime();
+                const timeLeft = endDate - now;
+    
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+                document.getElementById("countdown").innerHTML = days + " Days    " + hours + " : "
+                + minutes + " : " + seconds + "  ";
+    
+                if (timeLeft < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "GG";
+                }
+            }
+    
+            let x = setInterval(updateCountdown, 1000);
+        </script>
+
+<section class="LJ"> 
+
+    <a href="Story.html" class="btn">Know More About Doomsday</a>
+    <a href="Gears.html" class="btn">I Do Need Good Weapons!</a>
+    <a href="Application.html" class="btn">Apply for Doomsday Assistance</a>
+</section>
+
+</main>
+
+
+        <footer>
+        
+        <p class="footerP"> Contact YF498378@DAL.CA  If You Are Not Ready          </p> 
+    
+    </footer>
+</body>
+
+</html>

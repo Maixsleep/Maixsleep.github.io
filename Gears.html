@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yifan Huang">
+    <title> Apocalyptic Survival Gear and Supply</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DOOMSDAY SURVIVAL</h1>
+        <h2>DO Sonething at the end of the world</h2>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://theconversation.com/for-the-maya-solar-eclipses-were-a-sign-of-heavenly-clashes-and-their-astronomers-kept-sophisticated-records-to-predict-them-225535">SOlAR ECLIPSE</a></li>
+            <li><a href="https://www.survivethedoomsday.com/doomsday/">Prep for DOOMSDAY</a></li>
+            <li><a href="https://www.cnn.com/2024/01/23/world/doomsday-clock-2024-climate-scn/index.html">Doomsday Clock</a></li>
+            <li><a href="https://www.fema.gov/press-release/20210318/how-build-kit-emergencies">Preparedness Kit</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/List_of_potentially_habitable_exoplanets">Habitable Planet</a></li>
+        </ul>
+    </nav>
+    <button id="survival-tip-btn">Tips Bottom (Click More)</button>
+    <div id="survival-tip-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="survival-tip-text"></p>
+        </div>
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tips = [
+        "Dalhousie Uni doesn't provide you ISO 12312-2 eyeglasses during a solar eclipse like other universities do, much less shelter you during the end of the world.",
+        "When the sun gets dark, seek shelter or go into a basement.",
+        "Don't drink toilet water!",
+        "If your friend is acting up, say the mantra [Your ps5 archive is corrupted] to snap him out of it.",
+
+    ];
+    const tipButton = document.getElementById('survival-tip-btn');
+    const modal = document.getElementById('survival-tip-modal');
+    const tipText = document.getElementById('survival-tip-text');
+    const closeButton = document.getElementsByClassName('close')[0];
+
+    tipButton.onclick = function() {
+        const randomTip = tips[Math.floor(Math.random() * tips.length)];
+        tipText.textContent = randomTip;
+        modal.style.display = "block";
+    }
+
+    closeButton.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+});
+
+    </script>
+        <h3>Weapons that do more damage to zombies: FN2000, UMP45, M1919 and M24E6</h3>
+    <main class="Gears">
+
+        <section>
+            <img src="img/FN-F2000-Assault-Rifle..jpg" alt="FN2000" class="picture" >
+            <img src="img/Heckler-Koch-UMP.jpg" alt="UMP45" class="picture">
+            <img src="img/M1919-Browning.jpg" alt="M1919" class="picture">
+            <img src="img/M24E6-Machine-gun.jpg" alt="M24E6" class="picture">
+        </section>
+
+
+        
+    </main>
+    <section class="LJ"> 
+        <a href="index.html" class="btn">-  -  -  -  Home Page  -  -  -  -</a>
+        <a href="Story.html" class="btn">Know More About Doomsday</a>
+        <a href="Application.html" class="btn">Apply for Doomsday Assistance</a>
+    </section>
+
+        <footer>
+        
+        <p class="footerP"> Contact YF498378@DAL.CA  If You Are Not Ready          </p> 
+    
+    </footer>
+</body>
+
+</html>
